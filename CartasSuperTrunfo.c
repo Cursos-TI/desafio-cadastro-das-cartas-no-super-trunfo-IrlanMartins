@@ -50,13 +50,13 @@ int main() {
     fgets(pais, sizeof(pais), stdin);
     pais[strcspn(pais, "\n")] = '\0';
 
-    printf("Código: ");
-    scanf("%s", codigo);
-
     printf("Estado: ");
     getchar();
     fgets(estado, sizeof(estado), stdin);
     estado[strcspn(estado, "\n")] = '\0';
+
+    printf("Código: ");
+    scanf("%s", codigo);
 
     printf("Cidade: ");
     getchar();
