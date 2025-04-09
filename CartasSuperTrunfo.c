@@ -41,7 +41,13 @@ int main() {
     printf("\n**CARTA 01 CADASTRADA**\n");
     printf("- País: %s\n- Código: %s\n- Estado: %s\n- Cidade: %s\n", pais, codigo, estado, cidade);
     printf("- População: %d\n- Área: %.2f\n- PIB: %.2f\n- Número de Pontos Turísticos: %d\n", populacao, area, pib, pontosTuristicos);
+    
+    float densidadeP1 = populacao / area;
+    float pibpercapita1 = pib / populacao;
 
+    printf(" - Densidade Populacional: %.2f habitantes/km²\n", densidadeP1);
+    printf(" - PIB Percapita: %.2f milhões/habitante", pibpercapita1);
+    
     printf("\n**Carta 02**\n");
     printf("INSIRA OS DADOS PARA ADICIONAR A SUA CARTA\n");
 
@@ -78,6 +84,12 @@ int main() {
     printf("\n**CARTA 02 CADASTRADA**\n");
     printf("- País: %s\n- Código: %s\n- Estado: %s\n- Cidade: %s\n", pais, codigo, estado, cidade);
     printf("- População: %d\n- Área: %.2f\n- PIB: %.2f\n- Número de Pontos Turísticos: %d\n", populacao, area, pib, pontosTuristicos);
+    
+    float densidadeP2 = populacao / area;
+    float pibpercapita2 = pib / populacao;
+
+    printf(" - Densidade Populacional: %.2f habitantes/km²\n", densidadeP2);
+    printf(" - PIB Percapita: %.2f milhões/habitante", pibpercapita2);
 
     return 0;
 }
