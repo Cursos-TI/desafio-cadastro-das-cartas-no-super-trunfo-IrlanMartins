@@ -38,6 +38,7 @@
 
     printf("Números de Pontos Turísticos: \n");
     scanf("%d", &pontosTuristicos1);
+    getchar();
 
     printf("**CARTA 01 CADASTRADA**\n\n");
 
@@ -108,14 +109,15 @@
     printf(" - Super Poder da carta 2: %.2f\n\n", SuperPodercarta2);
 
     printf(" - QUEM VENCEU?\n");
-    printf("legenda: (1) = Carta 01 venceu / (0) = Carta 02 venceu\n\n");
+    printf("legenda: (1) = Carta 01 venceu / (0) = Carta 02 venceu\n ***MENOR DENSIDADE POPULACIONAL VENCE***\n\n");
     getchar();
 
     printf(" Super Poder da CARTA 01 > Super Poder da CARTA 02: %d\n", SuperPodercarta1 > SuperPodercarta2);
     printf(" População da CARTA 01 > População da CARTA 02: %d\n", populacao1 > populacao2);
     printf(" Área  da CARTA 01 > Área da CARTA 02: %d\n", area1 > area2);
     printf(" PIB da CARTA 01 > PIB da CARTA 02: %d\n", pib1 > pib2);
-    printf(" Pontos Turísticos da CARTA 01 > Pontos Turísticos da CARTA 02: %d\n\n", pontosTuristicos1 > pontosTuristicos2);
-   
+    printf(" Pontos Turísticos da CARTA 01 > Pontos Turísticos da CARTA 02: %d\n", pontosTuristicos1 > pontosTuristicos2);
+    printf(" Densidade Populacional da CARTA 01 < Densidade Populacional da CARTA 02: %d\n", densidadePopulacional1 < densidadePopulacional2);
+    printf(" PIB Per Capita da CARTA 01 > PIB Per Capita da CARTA 02: %d\n\n", pibPercapta1 > pibPercapta2);
     return 0;
 }
